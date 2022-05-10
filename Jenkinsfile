@@ -1,9 +1,7 @@
 
 pipeline {
-   agent any
-   
+   agent { label 'master' }
    stages {
-       
          stage('GET CSV FILE') {
              steps {
                  script {
